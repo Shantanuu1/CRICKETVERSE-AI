@@ -1,0 +1,28 @@
+{
+  "name": "cricketverse-ai",
+  "version": "1.0.0",
+  "description": "CricketVerse AI — Play with your hands. Analyse with AI. Improve your game.",
+  "scripts": {
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm start",
+    "ai": "python services/ai-orchestrator/app/main.py",
+    "test:ml": "python ml/tests/test_cricket_ml.py",
+    "test:ai": "python services/ai-orchestrator/tests/test_orchestrator.py",
+    "test:server": "cd server && npm test",
+    "test:client": "cd client && npm test",
+    "test:all": "npm run test:ml && npm run test:ai && npm run test:server && npm run test:client"
+  },
+  "keywords": [
+    "cricket",
+    "ai",
+    "gemma4",
+    "mediapipe",
+    "threejs",
+    "react",
+    "fastapi",
+    "ollama"
+  ],
+  "author": "CricketVerse AI Team",
+  "license": "MIT"
+}

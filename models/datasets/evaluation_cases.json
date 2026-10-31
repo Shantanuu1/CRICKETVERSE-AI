@@ -1,0 +1,76 @@
+{
+  "dataset_version": "1.0.0",
+  "name": "CricketTacticalCoachEvaluationSuite",
+  "created_at": "2026-10-31",
+  "test_scenarios": [
+    {
+      "scenario_id": "TC-001-HIGH-DOT-RATE",
+      "description": "Batter scores 32 runs off 24 balls with 12 dot balls and 3 wickets down. High dot-ball pressure leading to rash shots.",
+      "match_input": {
+        "runs": 32,
+        "balls": 24,
+        "wickets": 3,
+        "fours": 3,
+        "sixes": 2,
+        "dot_balls": 12,
+        "shot_distribution": {
+          "defensive": 3,
+          "leg_side": 5,
+          "off_side": 4,
+          "lofted": 12
+        }
+      },
+      "expected_coach_insights": [
+        "Identifies 50% dot ball ratio as the primary vulnerability",
+        "Recommends rotating strike with defensive or leg-glance singles",
+        "Flags over-reliance on lofted shots against tight bowling"
+      ]
+    },
+    {
+      "scenario_id": "TC-002-AGGRESSIVE-FINISHER",
+      "description": "Batter scores 58 runs off 20 balls with 0 wickets lost, 6 sixes and 4 fours.",
+      "match_input": {
+        "runs": 58,
+        "balls": 20,
+        "wickets": 0,
+        "fours": 4,
+        "sixes": 6,
+        "dot_balls": 2,
+        "shot_distribution": {
+          "defensive": 1,
+          "leg_side": 6,
+          "off_side": 5,
+          "lofted": 8
+        }
+      },
+      "expected_coach_insights": [
+        "Praises elite strike rate (>250)",
+        "Highlights balanced 360-degree shot distribution",
+        "Recommends maintaining composure against yorker lengths"
+      ]
+    },
+    {
+      "scenario_id": "TC-003-LEG-SIDE-BIAS",
+      "description": "Batter heavily favors leg-side shots (14 out of 18 shots), struggling on off-side channel deliveries.",
+      "match_input": {
+        "runs": 28,
+        "balls": 18,
+        "wickets": 2,
+        "fours": 2,
+        "sixes": 1,
+        "dot_balls": 7,
+        "shot_distribution": {
+          "defensive": 1,
+          "leg_side": 14,
+          "off_side": 1,
+          "lofted": 2
+        }
+      },
+      "expected_coach_insights": [
+        "Warns against predictable leg-side targeting",
+        "Advises practicing cover drive and off-side cut drills",
+        "Suggests adjusting guard or back-foot trigger movement"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "smoothing_factor": 0.35,
+  "cooldown_ms": 450,
+  "confidence_threshold": 0.70,
+  "velocity_swipe_threshold_x": 0.12,
+  "raised_palm_elevation_threshold_y": 0.35,
+  "finger_extension_threshold": 0.65,
+  "fist_curl_threshold": 0.38,
+  "cricket_action_map": {
+    "OPEN_PALM": {
+      "shot": "DEFENSIVE_BLOCK",
+      "description": "Solid forward defensive block along the pitch",
+      "risk": "Low",
+      "scoring_potential": "0-1 runs"
+    },
+    "SWIPE_LEFT": {
+      "shot": "LEG_SIDE_FLICK",
+      "description": "Flick off the pads or pull shot towards mid-wicket/square leg",
+      "risk": "Medium",
+      "scoring_potential": "1-4 runs"
+    },
+    "SWIPE_RIGHT": {
+      "shot": "OFF_SIDE_DRIVE",
+      "description": "Crisp cover drive or square cut through point",
+      "risk": "Medium",
+      "scoring_potential": "1-4 runs"
+    },
+    "RAISED_PALM": {
+      "shot": "LOFTED_DRIVE",
+      "description": "Aggressive aerial stroke clearing the 30-yard circle",
+      "risk": "High",
+      "scoring_potential": "4-6 runs / Dismissal"
+    },
+    "CLOSED_FIST": {
+      "shot": "LEAVE_BALL",
+      "description": "Judicious leave outside off-stump, preserving wicket",
+      "risk": "Zero (unless straight)",
+      "scoring_potential": "0 runs"
+    }
+  }
+}

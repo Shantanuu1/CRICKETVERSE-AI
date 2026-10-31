@@ -1,0 +1,33 @@
+{
+  "manifest_version": "1.0.0",
+  "model_name": "gemma4:e2b",
+  "provider": "ollama",
+  "provider_endpoint": "http://127.0.0.1:11434",
+  "description": "Google Gemma 4 E2B compact, high-efficiency edge instruction model optimized for cricket tactical coaching, commentary synthesis, and rules consultation.",
+  "parameters": {
+    "temperature": 0.3,
+    "top_p": 0.9,
+    "num_ctx": 4096,
+    "max_tokens": 1024
+  },
+  "runtime_requirements": {
+    "min_ram_gb": 4,
+    "recommended_ram_gb": 8,
+    "accelerator": "CPU or Vulkan/Metal/CUDA GPU",
+    "ollama_minimum_version": "0.1.30"
+  },
+  "intended_tasks": [
+    "cricket_match_postmortem",
+    "batting_shot_distribution_analysis",
+    "weakness_and_drill_recommendation",
+    "live_ball_commentary_generation",
+    "mcc_rules_clarification"
+  ],
+  "limitations": [
+    "Does not calculate live ball physics or collision detection.",
+    "Deterministic match scoring remains client/engine governed.",
+    "Requires structured match payload rather than raw video feeds."
+  ],
+  "status": "ready_for_local_inference",
+  "fallback_policy": "Graceful rule-based engine when Ollama daemon is unreachable."
+}

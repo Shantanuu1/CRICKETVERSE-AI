@@ -1,0 +1,111 @@
+{
+  "version": "1.0.0",
+  "source": "MCC Laws of Cricket & ICC Standard Playing Conditions",
+  "last_updated": "2026-10-31",
+  "rules": [
+    {
+      "id": "law_36_lbw",
+      "name": "Leg Before Wicket (LBW)",
+      "category": "Dismissal",
+      "summary": "A batter is out LBW if the ball pitches in line or outside off stump, is not hit by the bat, and strikes the batter's leg or body in line with the stumps, where it would have gone on to hit the wickets.",
+      "conditions": [
+        "The ball must not be a No-ball.",
+        "The ball must pitch in line with the stumps or on the off-side (never outside leg stump).",
+        "The ball must make impact with the batter's body/pad before touching the bat or glove.",
+        "If playing a shot, impact must be between wicket and wicket; if no shot is offered, impact outside off stump is eligible.",
+        "The trajectory must project to hit the stumps."
+      ],
+      "tactical_tip": "Keep your front pad outside the line of off-stump when leaving deliveries to eliminate the risk of an LBW dismissal."
+    },
+    {
+      "id": "law_21_no_ball",
+      "name": "No Ball & Free Hit",
+      "category": "Fair and Unfair Play",
+      "summary": "An illegal delivery bowled when the bowler oversteps the popping crease, bowls a waist-high full toss, or breaches field restriction regulations. Awards 1 extra run and a subsequent Free Hit in limited-overs formats.",
+      "conditions": [
+        "Front foot must land with some part behind the popping crease on first impact.",
+        "Back foot must land within the return crease.",
+        "Ball must not be delivered above waist height without pitching (Beamer).",
+        "Free Hit: Batter cannot be dismissed except via Run Out, Obstructing the Field, or Hit the Ball Twice."
+      ],
+      "tactical_tip": "On a Free Hit delivery, execute high-leverage lofted shots without fear of being caught out."
+    },
+    {
+      "id": "law_22_wide",
+      "name": "Wide Ball",
+      "category": "Fair and Unfair Play",
+      "summary": "A delivery that passes out of reach of the batter at normal guard, preventing them from making reasonable batting contact.",
+      "conditions": [
+        "Judged from the batter's normal stance.",
+        "Scores 1 extra run to the batting team.",
+        "Does not count as one of the 6 legal deliveries in the over.",
+        "In modern T20/limited-overs cricket, any delivery passing down the leg side without contact is strictly called wide."
+      ],
+      "tactical_tip": "Do not chase deliveries wide outside off unless pre-meditating a cut or upper-cut."
+    },
+    {
+      "id": "law_powerplay",
+      "name": "Fielding Restrictions (Powerplay)",
+      "category": "Tournament Playing Conditions",
+      "summary": "Overs during which the fielding captain is restricted in how many fielders may be placed outside the 30-yard fielding circle, encouraging attacking batting.",
+      "conditions": [
+        "In T20 matches, Overs 1 to 6 permit a maximum of 2 fielders outside the 30-yard circle.",
+        "In non-powerplay overs, up to 5 fielders are permitted outside the circle.",
+        "In standard 5-over hackathon blitzes, overs 1-2 serve as mandatory powerplay."
+      ],
+      "tactical_tip": "Target lofted shots over the infield during powerplay overs while fielders are forced into the 30-yard ring."
+    },
+    {
+      "id": "law_17_overs",
+      "name": "The Over",
+      "category": "Match Structure",
+      "summary": "A sequence of 6 valid deliveries bowled alternatively from opposite ends of the pitch by consecutive bowlers.",
+      "conditions": [
+        "A regular over consists of exactly 6 valid deliveries.",
+        "No-balls and Wides do not count toward the 6 deliveries and must be re-bowled.",
+        "No bowler may bowl two successive overs from the same or different ends."
+      ],
+      "tactical_tip": "Pace your innings in 6-ball blocks, targeting specific bowlers for aggressive acceleration."
+    },
+    {
+      "id": "law_dismissals",
+      "name": "Modes of Dismissal",
+      "category": "Dismissal",
+      "summary": "The 10 official methods by which a batter can be dismissed under MCC cricket laws.",
+      "conditions": [
+        "Bowled: Ball shatters the stumps and dislodges at least one bail.",
+        "Caught: Ball touches the bat or glove and is caught cleanly by a fielder before touching ground.",
+        "LBW: Leg before wicket criteria satisfied.",
+        "Run Out: Fielder breaks the stumps with ball while batter is out of crease attempting a run.",
+        "Stumped: Wicket-keeper breaks the stumps with ball while batter is out of crease without attempting a run.",
+        "Hit Wicket: Batter dislodges their own bails with bat or body during delivery or stroke.",
+        "Others: Obstructing field, Hit ball twice, Handled ball, Timed out."
+      ],
+      "tactical_tip": "Maintain grounded footing inside the crease when playing spin or leaving deliveries."
+    },
+    {
+      "id": "law_19_boundaries",
+      "name": "Boundaries (Fours and Sixes)",
+      "category": "Scoring",
+      "summary": "Runs awarded automatically when the ball reaches or crosses the designated boundary rope.",
+      "conditions": [
+        "Four Runs: Ball touches the ground before touching or crossing the boundary rope.",
+        "Six Runs: Ball clears the boundary rope on the full without touching the ground.",
+        "Overthrows: If fielders throw the ball across the boundary, boundary runs are added to runs already completed."
+      ],
+      "tactical_tip": "Keep off-side drives along the carpet to minimize catching risk while securing 4 runs."
+    },
+    {
+      "id": "metric_strike_rate",
+      "name": "Batting Strike Rate",
+      "category": "Analytics & Metrics",
+      "summary": "The average number of runs scored per 100 balls faced: Strike Rate = (Runs / Balls) * 100.",
+      "conditions": [
+        "Strike Rate < 100: Anchor or defensive pacing.",
+        "Strike Rate 120-150: Par limited-overs scoring rate.",
+        "Strike Rate > 180: Elite acceleration / finisher tempo."
+      ],
+      "tactical_tip": "Rotate strike with singles on dot-risk balls to keep strike rate healthy without reckless slogs."
+    }
+  ]
+}
